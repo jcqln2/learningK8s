@@ -1,15 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-   name: nginx
-   labels:
-    app: nginx
-    tier; frontend
+    name: nginx
+    labels:
+        app: nginx
+        tier: frontend
 
 spec:
     containers:
-     - name: nginx
-     image: nginx
-   
- 
-
+        - name: nginx
+          image: nginx
