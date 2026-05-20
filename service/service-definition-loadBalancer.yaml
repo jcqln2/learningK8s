@@ -1,0 +1,12 @@
+# So this type, LoadBalancer, only works with gcp, aws, azure...that has this built in support. In other setups, this would behave as if
+# type: NodePort
+apiVersion: v1
+kind: Service
+metadata:
+  name: myapp-service
+spec:
+  type: LoadBalancer
+  ports: 
+  - targetPort: 80
+    port: 80
+    nodePort: 30008
